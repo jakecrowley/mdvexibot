@@ -4,8 +4,8 @@ const util = require('util');
 
 const client = new Discord.Client();
 const MongoClient = mongodb.MongoClient;
-const token = "NDM4NDM1NjI1MjU2MDkxNjY4.DcEkgQ.P9S-XSNs98hU72OB-MhVOqrxaSg";
-const mongodbUri = process.env.VEXIBOT_DB;
+const token = process.env.VEXIBOT_TOKEN;
+const mongodbUri = process.env.MONGODB_URI;
 const mongodbOptions = {
 	keepAlive: 1,
 	connectTimeoutMS: 30000,
